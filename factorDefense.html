@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Prime Factor Defense</title>
+    <link rel="stylesheet" type="text/css" href="factorDefense.css" media="screen,projection" />
+    
+</head>
+<body>
+    <div id="title">
+	    <h1> Prime Factor Defense </h1>
+	    <button id="startButton" onClick="playGame()">Start</button>
+	    <p> Circles with numbers on them will come in waves and move along a path.  Your goal is to destroy 
+	    them before they get to the end of the path.  If a circle gets to the end, you will lose as many lives as
+	    the number on the circle.  When you run out of lives, the game is over. You can set up turrets to attack 
+	    the circle by clicking on squares adjacent to the path. Each turrent starts out with a value of 2.  
+	    Any time this turret senses a circle adjacent to its location, it will attack.  If the circle's number
+	    is divisible by 2, the number will be divided by 2. Otherwise, nothing happens.  This works the same way
+	    for any prime number.  When a circle's number becomes 1, the circle is destroyed.  If you click on an
+	    existing turret, it will increase its number to the next prime. Building a new turret costs 10 money, 
+	    and upgrading a turret costs 5.  You earn 1 money every time you destroy a circle.
+	    </p>
+	    <p> If you make it far enough, you may see circles with negative numbers. (if a negative number makes it to
+	    the end, you lose the absolute value of that number of lives).  The highest prime that can occur is 97, so
+	    if you upgrade a turret that has a value of 97, it becomes -1.  If you upgrade a -1, it wraps around back to 2.
+	    Each turret has a cooldown time.  Each turret will also attack every circle in every adjacent square (not
+	    counting diagonals) every time it chooses to shoot, and it will also shoot at the first circle it sees.  So
+	    if you have a 2 turret and a 2 circle is following right behind a 3 circle, the turret will shoot at the 3
+	    circle (which does nothing), and then it might miss the 2 circle due to its cooldown time if they are
+	    following very close together.
+	    </p>
+	    <p> After a wave has ended, the "Start Next Wave" button will be clickable. The next wave will not start
+	    until you click on it. You earn a point every time a turret successfully decreases a circle's number. Also,
+	    the first round will only have 2's and 3's.  The rounds get harder as you go.
+	    </p> 
+	</div>
+    <canvas></canvas>
+    <div id="conclusion" style="display:none">
+        <h1>Final Score</h1>
+        <h3 id="score"></h3>
+        <button onclick="playAgain()">Play Again</button>
+    </div>
+    <script src = factorDefense.js></script>
+</body>
+</html>

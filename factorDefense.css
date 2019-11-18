@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+/*
+Original design: Variant Duo (v1.2 - Sep 15, 2012) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/variant-duo/
+*/
+
+/* Main containers */
+body {padding:0; margin:0; font:90% tahoma,verdana,sans-serif; background-color:#bbccff; color:#333; text-align:center; line-height:1.6em;}
+#wrap {width:980px; text-align:left; margin:0 auto;}
+#menu {text-align:right;margin-top:-55px;}
+#content {background:#fff; text-align:left; padding:20px 20px 5px; margin:15px 0 15px 0;}
+
+/* HTML Tags */
+a {font-weight:400; color:#288D8A;}
+a:hover {text-decoration:none;}
+a img {border:0;}
+h1 {margin:15px auto 10px auto; padding:0; font:90% Georgia,Times New Roman,serif; font-size:2.4em; color:#288D8A; letter-spacing:-1px; line-height:1.2em;}
+h1 a {color:#288D8A; font-weight:700; text-decoration:none;}
+h1 a:hover {color:#333; text-decoration:none;}
+h2 {margin:0 0 12px 0; padding:10px 0; color:#288D8A; font-size:1.4em; font-weight:700; border-bottom:1px solid #ddd;}
+h2 a {font-weight:700;}
+h3 {font-size:1.4em; font-weight:400; margin:0 0 10px 0;}
+p {margin:0 0 15px 0; color:#288D8A;font-weight:400;}
+ul {margin:0 0 15px 20px; padding:0;}
+li {margin:0; padding:0 0 0 5px}
+
+ul.navmenu {padding:0; margin:0 0 20px 0; list-style:none;}
+ul.navmenu li a {color:#555; display:block; padding:5px 10px 5px 0; font-size:1.3em;}
+ul.navmenu li a:hover {color:#288D8A;}
+ul.navmenu li a.current {color:#288D8A;}
+ul.navmenu ul {margin:0 0 0 20px;}
+ul.navmenu ul li a {padding:2px 0 2px 0; font-size:1em;}
+
+/* Various classes */
+.slogan {color:#555; font-size:1.4em; margin:0 0 15px 0; padding:0; font:130% Georgia,Times New Roman,serif;}
+.feature {border-top:2px solid #fff; border-bottom:2px solid #fff; border-left:2px solid #fff; border-right:2px solid #fff;}
+.menulinks {font-size:1.5em; line-height:1.9em; color:#555; margin:0 0 15px 0;}
+.menulink {padding:6px 8px 5px 8px; font-weight:400; margin:0 0 0 2px; color:#555;}
+.menulink:hover {background-color:#eee; color:#333; text-decoration:none;}
+.borderlessbutton{opacity:1.0:border-top:0px solid #fff; border-bottom:0px solid #fff; border-left:0px solid #fff; border-right:0px solid #fff;}
+.imagebutton {opacity:1.0; border-top:0px solid #fff; border-bottom:0px solid #fff; border-left:0px solid #fff; border-right:0px solid #fff;}
+.imagebutton:hover {text-decoration:underline; opacity:0.7;}
+.emptylink {text-decoration:none;}
+.active {background-color:#288D8A; color:#fff;}
+.active:hover {background-color:#288D8A; color:#fff;}
+.footer{font-size:0.8em; clear:both; width:945px; line-height:1.4em; text-align:right; color:#888; font-weight:400; margin-bottom:10px;}
+.footer a {color:#888; font-weight:400; text-decoration:none; border-bottom: 1px dotted #aaa;}
+.left {float:left; width:150px;}
+.right {float:right; width:780px;}
+.centered {text-align:center;}
+.hide {display:none;}
+.singleinput {type:text; style:width:1em; maxlength:1;}
+.clear {clear:both; width:980px; visibility:hidden;}
+.row {  display: flex;}
+.column {  flex: 33.33%;  padding: 3px;}
